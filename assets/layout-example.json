@@ -1,0 +1,109 @@
+{
+  "name": "chen-yian-card",
+  "finished_mm": [
+    90,
+    54
+  ],
+  "bleed_mm": 3,
+  "safe_mm": 5,
+  "paper_preview": "#f4f0e8",
+  "faces": [
+    {
+      "face": "front",
+      "plates": [
+        {
+          "id": "ink1",
+          "process": "letterpress",
+          "colour": "PANTONE 2766 U",
+          "preview": "#2b2f5e"
+        },
+        {
+          "id": "ink2",
+          "process": "letterpress",
+          "colour": "PANTONE 7621 U",
+          "preview": "#b3282d"
+        }
+      ],
+      "elements": [
+        {
+          "plate": "ink2",
+          "type": "circle",
+          "cx_mm": 14,
+          "cy_mm": 15,
+          "r_mm": 4.5
+        },
+        {
+          "plate": "ink2",
+          "type": "circle",
+          "cx_mm": 14,
+          "cy_mm": 15,
+          "r_mm": 6.2,
+          "stroke_pt": 0.6
+        },
+        {
+          "plate": "ink1",
+          "type": "text",
+          "text": "微光室內設計",
+          "font": "C:/Windows/Fonts/NotoSansTC-VF.ttf",
+          "weight": 400,
+          "size_pt": 10,
+          "x_mm": 24,
+          "y_mm": 14.2,
+          "tracking": 0.12
+        },
+        {
+          "plate": "ink1",
+          "type": "text",
+          "text": "GLIMMER INTERIORS",
+          "font": "C:/Windows/Fonts/NotoSansTC-VF.ttf",
+          "weight": 300,
+          "size_pt": 7,
+          "x_mm": 24,
+          "y_mm": 18.4,
+          "tracking": 0.22
+        },
+        {
+          "plate": "ink1",
+          "type": "text",
+          "text": "陳怡安",
+          "font": "C:/Windows/Fonts/NotoSerifTC-VF.ttf",
+          "weight": 700,
+          "size_pt": 14,
+          "x_mm": 8,
+          "y_mm": 31,
+          "tracking": 0.08
+        },
+        {
+          "plate": "ink1",
+          "type": "text",
+          "text": "室內設計師　Interior Designer",
+          "font": "C:/Windows/Fonts/NotoSansTC-VF.ttf",
+          "weight": 400,
+          "size_pt": 7,
+          "x_mm": 8,
+          "y_mm": 36
+        },
+        {
+          "plate": "ink2",
+          "type": "line",
+          "x1_mm": 8,
+          "y1_mm": 39.5,
+          "x2_mm": 20,
+          "y2_mm": 39.5,
+          "width_pt": 0.75
+        },
+        {
+          "plate": "ink1",
+          "type": "text",
+          "text": "0900-000-000　yian.chen@example.com\n台北市大安區永康街 23 巷 5 號 2 樓",
+          "font": "C:/Windows/Fonts/NotoSansTC-VF.ttf",
+          "weight": 400,
+          "size_pt": 7,
+          "x_mm": 8,
+          "y_mm": 43.5,
+          "leading": 1.45
+        }
+      ]
+    }
+  ]
+}
