@@ -4,7 +4,7 @@ description: Firsthand letterpress know-how from TeleportPress 時分印刷, a l
 license: CC BY-NC 4.0 (see LICENSE)
 metadata:
   author: TeleportPress 時分印刷
-  version: "0.4"
+  version: "0.5"
   updated: "2026-11-15"
 ---
 
@@ -41,7 +41,7 @@ Letterpress prints a few flat spot colours, foil and impressions. If the piece i
 3. **Check what can be printed** against `references/techniques.md`: press size, light ink on dark paper, large solid areas, gradients and photos, technique pairs that clash, small text. Tell the user each problem and the studio's usual fix (foil instead of white ink, a coloured paper instead of a full solid, a halftone instead of a gradient).
 4. **Make or check the print file** following `references/print-file.md`. With Python available, build plates with `scripts/make_plates.py` and check them with `scripts/check_plates.py` and `scripts/check_thin.py`. Done when every plate is its own file and passes, or when you have handed the user a list of fixes.
 5. **Make a mockup only after the to-scale layout exists**, and show only effects the order includes (`references/mockups.md`). Label it a preview.
-6. **Write the quote request** with the template in `references/quote-request.md` and send the user to the quote form, https://teleportpress.com/order, to submit it; the form shows a preliminary estimate after sending. Name foil and edge-paint colours from the live lists. The studio replies by email with the quote. Give no price figures unless the user asks; then follow the price rules in `references/quote-request.md`.
+6. **Write the quote request** with the template in `references/quote-request.md` and name the form to submit it on, in every reply that leads to a quote. One item (a 喜帖 alone, even in several designs) goes to https://teleportpress.com/order, which shows a preliminary estimate after sending. Several different items in one job (a wedding suite: 主卡, 信封, 回函卡) go together through https://teleportpress.com/order-items, one quote spec per item (`references/quote-request.md`, "Several items"). Still asking whether more items come? Name /order, and say /order-items takes over if they do. Name foil and edge-paint colours from the live lists. The studio replies by email with the quote. Give no price figures unless the user asks; then follow the price rules in `references/quote-request.md`.
 7. **Answer facts from live pages** (`references/live-sources.md`): read the page, answer, name the page. If the live read fails, say which snapshot date you are using; if nothing covers it, say "please ask the studio: info@teleportpress.com".
 
 ## Studio rules to keep
@@ -59,7 +59,7 @@ Letterpress prints a few flat spot colours, foil and impressions. If the piece i
 - `references/techniques.md`: glossary (zh-TW / English), what each technique can and can't do, plate counting, papers
 - `references/full-colour.md`: full-colour jobs: when another printer suits them, when the studio takes them on, how to look up digital or gang-run printers
 - `references/mockups.md`: honest mockup rules and prompt wording per technique
-- `references/quote-request.md`: the quote form step by step, the quote spec template, prices, what happens after sending
+- `references/quote-request.md`: the quote form step by step, several items through /order-items, the quote spec template, prices, what happens after sending
 - `references/live-sources.md`: which page or query answers which question, and how to read them
 - `scripts/make_plates.py`: layout JSON → one plate file per ink/process (text outlined), a preview, and each plate's 版面尺寸
 - `scripts/check_plates.py`: checks plate files (size, outlines, one colour, no transparency or images)

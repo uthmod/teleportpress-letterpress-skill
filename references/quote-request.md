@@ -35,6 +35,20 @@ About five minutes, in four to six steps depending on the product. Field names a
 - Optional: 預算範圍 budget; 希望交期 the date they need it (the page notes the usual 20–25 working days from full payment and files, and that an earlier date may carry a rush fee: the studio replies whether it can be done); 檔案連結 a Google Drive or Dropbox link to the print files, shared so anyone with the link can view; 備註 for everything the steps don't ask (版面尺寸 of each plate, shapes, folds, holes, variants): paste the quote spec there.
 - 確認詢價內容 opens a summary to check before sending.
 
+## Several items: /order-items
+
+A job with several different items, such as a wedding suite (主卡 main card, 信封 envelope, 回函卡 reply card), goes through https://teleportpress.com/order-items (一次詢價多個品項, linked from the top of /order as 「品項很多？一次上傳規格表」): one request for all of them instead of /order once per item. One item in several designs (名片 款數) stays on /order. The page is zh-TW only, needs no account, and shows no estimate after sending. Fields as of 2026-11-15:
+
+**① 上傳規格檔** (optional): PDF, .ai saved PDF-compatible, or photos; up to 10 files, 30 MB each, the first 30 pages read. SVG is refused: upload the PDF `make_plates.py` writes. A bigger file goes on a cloud drive, its link in 檔案雲端連結. An AI reads the pages to find each item's 數量 and 尺寸 (the page says the files don't train models).
+
+**② 品項表**: one row per item, up to 30. A row needs 品項名稱 (30 characters at most), 數量 and 完成尺寸 長 × 寬 (cm); the other columns are optional (使用紙張, 印製方法, 正面版數, 背面版數, 燙金（版數）, 紙邊上色, 打凸, 軋型, 對裱, 烤松香, 其它). The AI marks every 數量 or 尺寸 it can't find on the pages; the user fills those cells. 「一次貼上多個品項」 adds the rows at once from one line per item, `名稱，數量，尺寸`, e.g. `名片，300，9×5.4 cm` (anything after the size goes to 其它), or from a sheet copied out of Excel or Google Sheets (the page has a 規格表範本).
+
+**③ 聯絡資料**: 姓名, 聯絡電話, Email (required); optional 希望收件日期 (the page notes about 20–25 working days of production), 印刷預算, 檔案雲端連結, 取貨方式 (來店自取 or 宅配), 從哪裡知道我們, 備註 (4,000 characters at most).
+
+**④ 確認送出**: an item missing its 數量 or 尺寸 can still be sent, but the studio then quotes an estimated figure, and a corrected re-quote joins the back of the queue. Give every item both.
+
+Prepare: the quote spec below once per item (one block each), one paste line per item for ②, and the print files as PDF for ①. The spec blocks go in 備註. After 送出 the page shows a 需求編號 (request number); the studio checks each item against the files and emails the quote.
+
 ## Quote spec template
 
 The same five headings as the interview (SKILL.md step 2). Fill it in the user's language; keep the studio's zh-TW terms in brackets. Every line gets a value, a default you named, "請工作室推薦 studio to recommend", or "不需要 none".

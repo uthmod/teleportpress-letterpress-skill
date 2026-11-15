@@ -12,7 +12,7 @@
 - 先告訴您手上的是「示意圖」還是「印刷檔」。照片、AI 生成圖、3D 模擬圖只能看效果，不能直接拿來製版；印刷檔要照實際尺寸、用向量畫，每一個油墨顏色、燙金、打凸都要分開成一個版。
 - 幫您做出或檢查印刷檔：成品尺寸、出血、安全距離、文字轉外框、最細線條、印刷機能印的最大尺寸，都照我們的規格。做不到的地方，會清楚列出要改什麼。
 - 做示意圖時，只畫我們印得出來的效果：燙金是平滑有光澤的金屬膜，不是凸起的亮粉；打凸不上墨，和印墨的地方分開。
-- 照詢價表單（https://teleportpress.com/order）要的內容，整理好品項、尺寸、數量、紙張、每一面的做法，讓您一次填完。
+- 照詢價表單（https://teleportpress.com/order）要的內容，整理好品項、尺寸、數量、紙張、每一面的做法，讓您一次填完。品項很多時（例如喜帖的主卡、信封、回函卡），它會請您改用多品項詢價（https://teleportpress.com/order-items），一次上傳規格檔、列出所有品項，並為每個品項各整理一份規格。
 - 價格、紙張、交期這些會變動的資訊，它會先讀我們網站上最新的頁面再回答；網站上找不到的，會請您直接來信 info@teleportpress.com，不會自己編。
 - 照片、漸層這類作品要用數位印刷或合版印刷，凸版印刷印不出來。這類訂單一般交給專門的印刷廠比較合適，它會直接告訴您，也可以幫您上網查您附近的印刷廠，列出網址、檔案規格、報價頁和交期。如果您希望由我們仔細檢查檔案、指出要調整的地方，或作品還要燙金、打凸、打凹、模切，我們也可以承接，費用另計。
 
@@ -81,7 +81,7 @@ A skill: written instructions for an AI assistant, not a program you open. Once 
 - It tells you early whether you have a preview (a photo, AI image or render, which can't be used to make plates) or a print file (to scale, vector, one plate per ink colour and per process).
 - It makes or checks print files to our rules (finished size, bleed, safe margin, outlined text, minimum line widths, press size limits) and lists exactly what to fix when it can't.
 - Its mockups show only effects we can print: foil as a flat glossy film, emboss without ink and apart from the printed areas.
-- It prepares a quote request that matches our quote form (https://teleportpress.com/order), so you can fill it in one pass.
+- It prepares a quote request that matches our quote form (https://teleportpress.com/order), so you can fill it in one pass. For several items at once (say a wedding suite's main card, envelope and reply card) it sends you to our multi-item enquiry (https://teleportpress.com/order-items) instead, with a spec for each item.
 - For prices, papers and lead time it reads our live pages first, and says "please ask the studio" (info@teleportpress.com) when they don't cover the question.
 - Full-colour work (photos, gradients) needs digital (數位印刷) or gang-run (合版印刷) printing, not letterpress. Those jobs usually suit a specialist printer: it says so plainly and can look some up near you with their links, file specs, quote pages and lead times. We still take them on, at an extra charge, if you want us to check your files carefully and point out what to improve, or if the piece also needs foil, embossing, debossing or die cutting.
 
