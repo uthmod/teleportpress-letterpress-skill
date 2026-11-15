@@ -13,15 +13,15 @@ Read these before stating anything that changes: prices, papers, foil and edge-p
 | Techniques: letterpress, foil, emboss, die-cut, edge paint, duplex, plate reuse | guide `printing-finishing`, `letterpress-effects` |
 | Plate counting, shared plates | guide `plate-counting` |
 | Halftones | guide `halftone-techniques` |
-| Prices, tax, payment, reprints | guide `pricing-ordering`, plus the order form's live range |
+| Prices, tax, payment, reprints | guide `pricing-ordering`, plus the facts page's indicative ranges |
 | Lead time, rush, shipping, pickup | guide `timeline-delivery` |
 | Product types and common sizes | guide `project-types-products` |
 | Foil colours, edge-paint colours, order stages, technique notes | the content API queries below |
-| A live price range for a specific spec | the form at https://teleportpress.com/order |
+| A price for a specific spec | indicative ranges on https://teleportpress.com/facts.html; the exact price is the studio's quote after the request at https://teleportpress.com/order (the form shows a preliminary estimate after sending) |
 | Fixed-price products | https://teleportpress.com/shop |
 | Digital or gang-run printers for a full-colour job | a live web search, each printer's own pages (`full-colour.md`) |
 
-Guide pages are `https://teleportpress.com/guides/<slug>` (index: https://teleportpress.com/guides) and serve readable text to a plain HTTP fetch. The paper browser (https://teleportpress.com/paper-swatches) and foil page (https://teleportpress.com/foil) only work in a browser; use the API for foil colours, and the order form's paper list or 「請幫我推薦」 for papers.
+Guide pages are `https://teleportpress.com/guides/<slug>` (index: https://teleportpress.com/guides) and serve readable text to a plain HTTP fetch. The paper browser (https://teleportpress.com/paper-swatches) and foil page (https://teleportpress.com/foil) only work in a browser; use the API for foil colours, and the order form's paper list for papers (or ask the studio to recommend one in 備註).
 
 ## The content API (JSON)
 
@@ -57,7 +57,7 @@ Ask only for the fields you need, as above.
 - For file rules, use the stricter value (see `print-file.md`) and say the studio confirms details when it checks the file.
 - Live page versus this skill: the live page wins.
 
-## Snapshot (2026-11-03), for when you can't read the live pages
+## Snapshot (2026-11-15), for when you can't read the live pages
 
 Say it is a snapshot and give the date.
 
@@ -67,4 +67,4 @@ Say it is a snapshot and give the date.
 
 ## Ask the studio
 
-When no source answers it (a paper not listed, a size past the press limits, an unusual process, a deadline, a discount), say plainly that you don't know, and suggest the user write to info@teleportpress.com or add the question to 整體備註 on the order form. Don't fill the gap with general letterpress knowledge or another printer's practice: this studio's terms and prices differ. (Looking up other printers for a full-colour job is different: there you report each printer's own pages, read live, as theirs; see `full-colour.md`.)
+When no source answers it (a paper not listed, a size past the press limits, an unusual process, a deadline, a discount), say plainly that you don't know, and suggest the user write to info@teleportpress.com or add the question to 備註 on the order form. Don't fill the gap with general letterpress knowledge or another printer's practice: this studio's terms and prices differ. (Looking up other printers for a full-colour job is different: there you report each printer's own pages, read live, as theirs; see `full-colour.md`.)
