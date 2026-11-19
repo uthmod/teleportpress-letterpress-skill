@@ -20,7 +20,7 @@ What the studio makes plates from, and how to build or check one. Values are fro
 - **One file (or one clearly named layer) per plate.** Name each file `<design>-<face>-<process>-<colour>`, for example `chen-card-front-letterpress-PANTONE-2766-U.pdf`, `chen-card-front-foil-matte-gold.pdf`, `chen-card-back-emboss.pdf`, `chen-card-dieline.pdf`.
 - **A colour preview** of each face, marked as a preview, so the studio sees how the plates combine.
 - **The spec** (quote request) listing every plate with its ink, foil or process (`quote-request.md`).
-- Delivery: upload the files to Google Drive or Dropbox, share as "anyone with the link can view", and paste the link in the order form's 「檔案連結」 field.
+- Delivery: upload the files to Google Drive or Dropbox, share as "anyone with the link can view", and paste the link in the order form's 「設計檔雲端連結」 field (「檔案連結」 on the original form). The picture you can attach in the new form's first step is for quoting only and never used for printing.
 
 ## 2. Artboard, bleed, safe area
 
@@ -28,7 +28,7 @@ What the studio makes plates from, and how to build or check one. Values are fro
 - **Bleed (出血): 3 mm each side.** Anything meant to run off the edge must extend to the bleed line.
 - **Safe area (安全距離): keep text and important artwork at least 3 mm inside the trim, 5 mm is safer.** The cut can wander 0.5–1 mm, and art close to the edge then looks crooked. Borders near a die-cut edge also need 3–5 mm (die-cut tolerance is about 1 mm).
 - **No gripper margin (咬口), no crop marks needed, no sheet layout.** The studio adds its gripper and trim room itself. An artboard larger than finished size + bleed gets the piece printed at the wrong size.
-- Folded or glued pieces (信封, 紅包袋): the order form's 客製信封 asks for the 展開尺寸 (the flat sheet, flap included) and a complete die drawing (展開圖) with the fold lines marked; send that drawing as the die-line plate and give the finished (folded) size in 備註.
+- Folded or glued pieces (信封, 紅包袋): the new form takes the finished (folded) size and a template or 我有自己的展開圖; the original form's 客製信封 asks for the 展開尺寸 (the flat sheet, flap included) and a complete die drawing (展開圖) with the fold lines marked, with the finished size in 備註. Either way, send your own die drawing as the die-line plate.
 
 ## 3. One plate per ink and process
 
@@ -88,7 +88,7 @@ The studio prices and prints one plate per colour per pass ("一色一版"). Bui
 Python 3.9+. `pip install fonttools pymupdf` for `make_plates.py` and PDF checks; `pip install opencv-python pymupdf numpy scipy` for `check_thin.py`. Each script has `--selftest`.
 
 1. **Write a layout JSON** (copy `assets/layout-example.json`): finished size, bleed 3, one entry per face with its plates (`process`: letterpress, foil, emboss, deboss or dieline; `colour`; a `preview` colour) and elements (`text`, `rect`, `circle`, `line`, `path`), each assigned to a plate. Coordinates are mm from the top-left corner of the trimmed piece; bleed is negative. Text needs a font file on this machine that covers every character; Noto Sans TC / Noto Serif TC (思源黑體／宋體, SIL Open Font License) are safe choices, or the user's own licensed font. Run `python scripts/make_plates.py --help` for every field.
-2. **Build**: `python scripts/make_plates.py layout.json --out plates/`. You get one SVG + PDF per plate (100% black, text outlined), `<name>-<face>-preview.svg`, and `plates.json` with each plate's 版面尺寸 (plate area, cm, rounded up to 0.5 cm) for the quote spec. Read its warnings: text inside the safe margin, art that crosses the trim without reaching the bleed.
+2. **Build**: `python scripts/make_plates.py layout.json --out plates/`. You get one SVG + PDF per plate (100% black, text outlined), `<name>-<face>-preview.svg`, and `plates.json` with each plate's 版面尺寸 (plate area, cm, rounded up to 0.5 cm) for the quote spec and the new form's per-plate 版面尺寸 boxes. Read its warnings: text inside the safe margin, art that crosses the trim without reaching the bleed.
 3. **Check structure**: `python scripts/check_plates.py plates/*.pdf --finished 90x54`. Every plate must say `ok`. The same check works on files the user made (SVG or PDF): it reports wrong artboard size, live text, images, gradients, transparency and more than one colour per plate.
 4. **Check thin lines and gaps**: `python scripts/check_thin.py <plate.pdf> --process letterpress` (also `reverse`, `foil`, `matte-silver`, `emboss`). Run it per plate. It writes a PNG with red circles (ink too thin) and blue circles (gap too narrow); coordinates are mm from the artboard corner, bleed included. Flags inside the sharp inner corners of letters like M, N, V, W, and in tight counters of bold Chinese characters, are normal at small sizes: look at the PNG and fix the real ones (a counter that closes up, a hairline that would break) by enlarging the text, changing weight or font, or opening the spacing.
 5. **Look at the preview** before you hand anything over.

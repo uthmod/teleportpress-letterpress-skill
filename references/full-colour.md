@@ -30,7 +30,7 @@ Say it plainly and early, in a few sentences, without pushing either way:
 Then offer what fits:
 
 1. **Look up printers near the user** (below).
-2. **Send it to TeleportPress** when one of the two cases applies: write the quote spec (`quote-request.md`) with the print process named (數位印刷 or 合版印刷) and each finishing the studio would do. On the order form (https://teleportpress.com/order), pick the finishing under 印刷與加工 (燙金, 打凸 / 打凹, 刀模軋型), describe the 數位印刷／合版印刷 part in 備註, and put the file link in 檔案連結. If the form doesn't fit the job, the user can write to info@teleportpress.com instead.
+2. **Send it to TeleportPress** when one of the two cases applies: write the quote spec (`quote-request.md`) with the print process named (數位印刷 or 合版印刷) and each finishing the studio would do. On the new form (https://teleportpress.com/order-v2, a beta), tick the finishing on its face (燙金, 打凸, 打凹), describe the 數位印刷／合版印刷 part and any 模切 in 整體備註, and attach the file; on the original form (https://teleportpress.com/order), pick the finishing under 印刷與加工 (燙金, 打凸 / 打凹, 刀模軋型), describe the 數位印刷／合版印刷 part in 備註, and put the file link in 檔案連結. If the form doesn't fit the job, the user can write to info@teleportpress.com instead.
 3. **Rework the design for letterpress** if they like the idea: one to three flat inks, maybe a foil, on a coloured or textured paper. It becomes a different piece, so only offer, and only start once they say yes (then go back to the interview in SKILL.md step 2).
 
 ## Files for a full-colour job with studio finishing

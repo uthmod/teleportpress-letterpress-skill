@@ -17,6 +17,7 @@ What each process at TeleportPress 時分印刷 does, what it can't do, and the 
 | 專色／Pantone U | spot colour, Pantone Uncoated | How every ink is specified. |
 | 透明墨 | clear ink | A transparent ink that makes a deboss read a shade darker than the paper. |
 | 空壓／打凹不上墨 | blind deboss | Pressed in with no ink. |
+| 壓凹 | single-plate deboss | One plate pressed in with no ink (a choice on the new form, /order-v2); 上透明墨 adds clear ink. 打凹 uses a pair of dies. |
 | 燙金 | foil stamping (hot foil) | Heat transfers a metal or colour foil film onto the paper. |
 | 燙箔色 | foil colour | The foil picked for 燙金. |
 | 霧銀箔 MS-01 | matte silver foil | The sharpest "white" for dark papers. |
@@ -71,9 +72,9 @@ What each process at TeleportPress 時分印刷 does, what it can't do, and the 
 
 ## 對裱 duplex, 刀模軋型 die-cutting, 烤松香 thermography
 
-- **對裱**: two or three sheets glued into one thick card: more weight, a different colour each side, a coloured core showing at the edge, a hidden emboss dent. On the order form, pick 對裱 under 印刷與加工, then the number of sheets (對裱層數) and each sheet's paper.
+- **對裱**: two or three sheets glued into one thick card: more weight, a different colour each side, a coloured core showing at the edge, a hidden emboss dent. The new form adds a sheet per face, up to three; on the original form, pick 對裱 under 印刷與加工, then the number of sheets (對裱層數) and each sheet's paper.
 - **刀模軋型**: custom shapes, rounded corners, holes. About 1 mm tolerance; keep borders 3–5 mm from the cut. Holes are cut by a die too.
-- **烤松香**: raised glossy type from resin powder; softer edges than letterpress; not for hairline type or white and fluorescent inks. On the order form it is 烤松香（烤凸） under 印刷與加工, and it needs at least one 凸版印刷 plate.
+- **烤松香**: raised glossy type from resin powder; softer edges than letterpress; not for hairline type or white and fluorescent inks. On the original form it is 烤松香（烤凸） under 印刷與加工, and it needs at least one 凸版印刷 plate; on the new form, ask for it in 整體備註.
 
 ## Plate counting (版數)
 
@@ -86,12 +87,12 @@ Fewer plates cost less: one ink plus paper colour often looks better than many i
 
 ## Papers
 
-- Read the live guide (https://teleportpress.com/guides/paper-ink) for the recommended papers; for an actual pick, the order form's paper list (or ask the studio to recommend one in 備註), or the paper sample pages at https://teleportpress.com/paper-swatches.
+- Read the live guide (https://teleportpress.com/guides/paper-ink) for the recommended papers; for an actual pick, the order form's paper list (or 「請幫我推薦」 on the new form, a note in 備註 on the original), or the paper sample pages at https://teleportpress.com/paper-swatches.
 - Weight guide: 116–240 g envelopes and sleeves (120 g closes flatter), not for large foil or emboss; 250–300 g common cards with limited depth; 300–400 g recommended for name cards and invitations; 400 g+ for deep impressions, edge painting and large foil areas.
 - Papers over 250 g crack when folded.
 - **Never 美國啤酒紙 on cards or postcards: it curls.** For a beer-board look, offer 薪傳瑪芬紙 or 日本啤酒紙.
 - Rough papers make white ink blotchy; hard-core papers (e.g. MATTER 美奈特) can show the impression on the back.
-- Customers may supply their own paper (say so in the order form's 備註): the studio needs extra sheets and doesn't guarantee results on outside stock. Ask the studio for the cut size and quantity.
+- Customers may supply their own paper (「我會自備紙材」 on the new form, a note in 備註 on the original): the studio needs extra sheets and doesn't guarantee results on outside stock. Ask the studio for the cut size and quantity.
 
 ## What the studio does and doesn't do
 
