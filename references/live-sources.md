@@ -17,11 +17,11 @@ Read these before stating anything that changes: prices, papers, foil and edge-p
 | Lead time, rush, shipping, pickup | guide `timeline-delivery` |
 | Product types and common sizes | guide `project-types-products` |
 | Foil colours, edge-paint colours, order stages, technique notes | the content API queries below |
-| A price for a specific spec | a live price range on the new form (測試版, a beta) at https://teleportpress.com/order-v2; indicative ranges on https://teleportpress.com/facts.html; the original form at https://teleportpress.com/order shows a preliminary estimate after sending; the exact price is the studio's quote |
+| A price for a specific spec | indicative ranges on https://teleportpress.com/facts.html; the exact price is the studio's quote after the request at https://teleportpress.com/order (the form shows a preliminary estimate after sending) |
 | Fixed-price products | https://teleportpress.com/shop |
 | Digital or gang-run printers for a full-colour job | a live web search, each printer's own pages (`full-colour.md`) |
 
-Guide pages are `https://teleportpress.com/guides/<slug>` (index: https://teleportpress.com/guides) and serve readable text to a plain HTTP fetch. The paper browser (https://teleportpress.com/paper-swatches) and foil page (https://teleportpress.com/foil) only work in a browser; use the API for foil colours, and the order form's paper list for papers (or 「請幫我推薦」 on the new form, a note in 備註 on the original).
+Guide pages are `https://teleportpress.com/guides/<slug>` (index: https://teleportpress.com/guides) and serve readable text to a plain HTTP fetch. The paper browser (https://teleportpress.com/paper-swatches) and foil page (https://teleportpress.com/foil) only work in a browser; use the API for foil colours, and the order form's paper list for papers (or ask the studio to recommend one in 備註).
 
 ## The content API (JSON)
 
@@ -62,9 +62,9 @@ Ask only for the fields you need, as above.
 Say it is a snapshot and give the date.
 
 - Lead time: 20–25 working days for every custom order, counted from the working day after the studio has confirmed the files and received full payment; weekends, public holidays and shipping are not included.
-- Contact: info@teleportpress.com; quotes through https://teleportpress.com/order (the original form), https://teleportpress.com/order-v2 (the new form, a beta) or https://teleportpress.com/order-items (several items).
+- Contact: info@teleportpress.com; quotes through https://teleportpress.com/order (one item) or https://teleportpress.com/order-items (several items).
 - Prices: none in this snapshot. Send the user to the order form or the facts page.
 
 ## Ask the studio
 
-When no source answers it (a paper not listed, a size past the press limits, an unusual process, a deadline, a discount), say plainly that you don't know, and suggest the user write to info@teleportpress.com or add the question to the order form's notes (整體備註 on the new form, 備註 on the original). Don't fill the gap with general letterpress knowledge or another printer's practice: this studio's terms and prices differ. (Looking up other printers for a full-colour job is different: there you report each printer's own pages, read live, as theirs; see `full-colour.md`.)
+When no source answers it (a paper not listed, a size past the press limits, an unusual process, a deadline, a discount), say plainly that you don't know, and suggest the user write to info@teleportpress.com or add the question to 備註 on the order form. Don't fill the gap with general letterpress knowledge or another printer's practice: this studio's terms and prices differ. (Looking up other printers for a full-colour job is different: there you report each printer's own pages, read live, as theirs; see `full-colour.md`.)

@@ -4,8 +4,8 @@ description: Firsthand letterpress know-how from TeleportPress 時分印刷, a l
 license: CC BY-NC 4.0 (see LICENSE)
 metadata:
   author: TeleportPress 時分印刷
-  version: "0.6"
-  updated: "2026-11-19"
+  version: "0.7"
+  updated: "2026-11-20"
 ---
 
 # Letterpress with TeleportPress 時分印刷
@@ -34,14 +34,14 @@ Letterpress prints a few flat spot colours, foil and impressions. If the piece i
    1. **Product and specs**: what it is, paper, inks, foil, 打凸 emboss / 打凹 deboss, 紙邊上色 edge paint, which faces (front, back).
    2. **Finished size** (成品尺寸), W × H.
    3. **Quantity** (and how many designs).
-   4. **Lead time**: the date they need it, and whether it's a rush. The studio's standard is 20–25 working days from confirmed files and payment (check the live page). Never promise a rush: the date goes in the form's date field (「希望哪一天收到」 on the new form, 「希望交期」 on the original) and the studio replies whether it can be done.
+   4. **Lead time**: the date they need it, and whether it's a rush. The studio's standard is 20–25 working days from confirmed files and payment (check the live page). Never promise a rush: the date goes in the form's 「希望交期」 field and the studio replies whether it can be done.
    5. **Who designs**: does the user (or their designer) have their own files? Then you check them (step 4). Is it an AI image, a photo of something, or a mockup? Then offer to make the print file for them: for letterpress the best files are SVG or Adobe Illustrator. The scripts make SVG (+ PDF); to get an `.ai`, open the SVG in Illustrator and Save As `.ai`.
 
    Ask only for what is missing, all of it in one short message, not one question per message. If you can't tell what the product is or how many, ask and make nothing yet. If the product and quantity are clear and the user asked you to make or prepare something, don't stop: say which defaults you are using for the rest (名片 9 × 5.4 cm, paper 「請工作室推薦」, no fixed date) and carry on; they can correct you. Done when each of the five has a value, a default you named, or "the studio recommends".
 3. **Check what can be printed** against `references/techniques.md`: press size, light ink on dark paper, large solid areas, gradients and photos, technique pairs that clash, small text. Tell the user each problem and the studio's usual fix (foil instead of white ink, a coloured paper instead of a full solid, a halftone instead of a gradient).
 4. **Make or check the print file** following `references/print-file.md`. With Python available, build plates with `scripts/make_plates.py` and check them with `scripts/check_plates.py` and `scripts/check_thin.py`. Done when every plate is its own file and passes, or when you have handed the user a list of fixes.
 5. **Make a mockup only after the to-scale layout exists**, and show only effects the order includes (`references/mockups.md`). Label it a preview.
-6. **Write the quote request** with the template in `references/quote-request.md` and name the form to submit it on, in every reply that leads to a quote. One item (a 喜帖 alone, even in several designs) goes to either of two forms: https://teleportpress.com/order-v2, the new form (測試版, a beta, zh-TW only), which shows a live price range while they fill it in, or https://teleportpress.com/order, the original form, which shows a preliminary estimate after sending. Say plainly that the new one is a beta. Several different items in one job (a wedding suite: 主卡, 信封, 回函卡) go together through https://teleportpress.com/order-items, one quote spec per item (`references/quote-request.md`, "Several items"). Still asking whether more items come? Name the two one-item forms, and say /order-items takes over if they do. Name foil and edge-paint colours from the live lists. The studio replies by email with the quote. Give no price figures unless the user asks; then follow the price rules in `references/quote-request.md`.
+6. **Write the quote request** with the template in `references/quote-request.md` and name the form to submit it on, in every reply that leads to a quote. One item (a 喜帖 alone, even in several designs) goes to https://teleportpress.com/order, which shows a preliminary estimate after sending. Several different items in one job (a wedding suite: 主卡, 信封, 回函卡) go together through https://teleportpress.com/order-items, one quote spec per item (`references/quote-request.md`, "Several items"). Still asking whether more items come? Name /order, and say /order-items takes over if they do. Name foil and edge-paint colours from the live lists. The studio replies by email with the quote. Give no price figures unless the user asks; then follow the price rules in `references/quote-request.md`.
 7. **Answer facts from live pages** (`references/live-sources.md`): read the page, answer, name the page. If the live read fails, say which snapshot date you are using; if nothing covers it, say "please ask the studio: info@teleportpress.com".
 
 ## Studio rules to keep
@@ -51,7 +51,7 @@ Letterpress prints a few flat spot colours, foil and impressions. If the piece i
 - Foil looks like a flat, smooth, glossy metal film in a mockup, never raised, puffy or glittery. Emboss is blind (no ink) and sits apart from the inked areas.
 - 美國啤酒紙 curls, so the studio doesn't use it for cards or postcards. When a user asks for it there, offer 薪傳瑪芬紙 or 日本啤酒紙 for that look.
 - Use the user's text as given. Anything you add or translate (a Chinese job title, a tagline, a logo) goes in your list of assumptions. Wedding pieces: use the names and roles the user gives; don't assign bride or groom roles yourself.
-- Lead time and rush: read them live. Tell the user to put their real date in the form's date field (「希望哪一天收到」, or 「希望交期」 on the original form) and let the studio say whether it can be done; don't promise speed.
+- Lead time and rush: read them live. Tell the user to put their real date in the form's 「希望交期」 field and let the studio say whether it can be done; don't promise speed.
 
 ## Files
 
@@ -59,7 +59,7 @@ Letterpress prints a few flat spot colours, foil and impressions. If the piece i
 - `references/techniques.md`: glossary (zh-TW / English), what each technique can and can't do, plate counting, papers
 - `references/full-colour.md`: full-colour jobs: when another printer suits them, when the studio takes them on, how to look up digital or gang-run printers
 - `references/mockups.md`: honest mockup rules and prompt wording per technique
-- `references/quote-request.md`: the three quote forms (the new /order-v2 section by section, the original /order step by step, several items through /order-items), the quote spec template, prices, what happens after sending
+- `references/quote-request.md`: the quote form /order step by step, several items through /order-items, the quote spec template, prices, what happens after sending
 - `references/live-sources.md`: which page or query answers which question, and how to read them
 - `scripts/make_plates.py`: layout JSON → one plate file per ink/process (text outlined), a preview, and each plate's 版面尺寸
 - `scripts/check_plates.py`: checks plate files (size, outlines, one colour, no transparency or images)
